@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    text-align: left;
+    
+}
+h2{
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.2rem;
+}
+main{
+    margin-top: 8rem;
+}
+
+#name{
+    text-align: center;
+    background-color: blanchedalmond;
+    border-radius: 10rem;
+}
+
+#relation{
+    text-align: center;
+    background-color: blanchedalmond;
+    border-radius: 10rem;
+    margin-top: 0.5rem;
+}
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSNR PRODUCTIONS - Voting</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">SSNR PRODUCTIONS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="details.html">Voting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+
+        <div class="container">
+            <form action="demo.php" method="POST">
+                <!-- 1. story -->
+                <h2>Best story:</h2>
+                <br>
+                <input type="radio" name="Story" id="story_Dasavatharam" value="Dasavatharam 369 (Prathima,Kiran,Teja)"
+                    required><label for="story_Dasavatharam">Dasavatharam 369 (Prathima,Kiran,Teja)</label>
+                <br>
+                <input type="radio" name="Story" id="story_Suparichithudu" value="Suparichithudu (Teja)"><label
+                    for="story_Suparichithudu">Suparichithudu (Teja)</label>
+                <br>
+                <input type="radio" name="Story" id="story_Gangleader" value="Gang leader (Kiran)"><label
+                    for="story_Gangleader">Gang leader
+                    (Kiran)</label>
+                <br>
+                <br>
+                <!--2. movie -->
+                <h2>Best movie:</h2>
+                <br>
+                <input type="radio" name="Movie" id="movie_gl" value="Gangleader" required><label for="movie_gl">Gang
+                    leader</label>
+                <br>
+                <input type="radio" name="Movie" id="movie_kbs" value="kiran babu sarvarupasya"><label for="movie_kbs"
+                    required>Kiran babu
+                    sarvarupasya</label>
+                <br>
+                <input type="radio" name="Movie" id="movie_amat" value="anthakamundhu aa tarvata"><label
+                    for="movie_amat" required>Anthaku
+                    mundhu ...ah
+                    tarvata</label>
+                <br>
+                <input type="radio" name="Movie" id="movie_supari" value="Suparichithudu" required><label
+                    for="movie_supari">Suparichithudu</label>
+                <br>
+                <input type="radio" name="Movie" id="movie_Bungamoothi" value="Bungamoothi" required><label
+                    for="movie_Bungamoothi">Bungamoothi</label>
+                <br>
+                <input type="radio" name="Movie" id="movie_dasa" value="Dasavatharam 369"><label for="movie_dasa"
+                    required>Dasavatharam 369</label>
+                <br>
+                <br>
+                <!-- 3 actor -->
+                <h2>Best actor:</h2>
+                <br>
+                <input type="radio" name="Actor" id="actor_Prathima" value="Dasavatharam369, Suparichithudu (Prathima)"
+                    required><label for="actor_Prathima">Dasavatharam369, Suparichithudu (Prathima)</label>
+                <br>
+                <input type="radio" name="Actor" id="actor_Kiran" value="Dasavatharam369, Suparichithudu (Kiran)"
+                    required><label for="actor_Kiran">Dasavatharam369, Suparichithudu (Kiran)</label>
+                <br>
+                <input type="radio" name="Actor" id="actor_Teja" value="Gang leader , Dasavatharam 369 (Teja)"
+                    required><label for="actor_Teja">Gang leader ,Dasavatharam 369 (Teja)</label>
+                <br>
+                <input type="radio" name="Actor" id="actor_Chaitanya" value="Dasavatharam369, Bungamoothi (Chaitanya)"
+                    required><label for="actor_Chaitanya">Dasavatharam369, Bungamoothi (Chaitanya)</label>
+                <br>
+                <input type="radio" name="Actor" id="actor_Deepika" value="Dasavatharam369, Suparichithudu (Deepika)"
+                    required><label for="actor_Deepika">Dasavatharam369, Suparichithudu (Deepika)</label>
+                <br>
+                <input type="radio" name="Actor" id="actor_Kaushik"
+                    value="Anthakamundhu ah tarvata , Kiran babu sarvarupasya (Kaushik) " required><label
+                    for="actor_Kaushik">Anthakamundhu ah tarvata , Kiran babu sarvarupasya (Kaushik) </label>
+                <br>
+                <br>
+                <!-- 4 director -->
+                <h2>Best director:</h2>
+                <br>
+                <input type="radio" name="Director" id="director_Prathima" value="Prathima" required><label
+                    for="director_Prathima">Prathima</label>
+                <br>
+                <input type="radio" name="Director" id="director_Kiran" value="Kiran" required><label
+                    for="director_Kiran">Kiran</label>
+                <br>
+                <input type="radio" name="Director" id="director_Teja" value="Teja" required><label
+                    for="director_Teja">Teja</label>
+                <br>
+                <input type="radio" name="Director" id="director_Chaitanya" value="Chaitanya" required><label
+                    for="director_Chaitanya">Chaitanya</label>
+                <br>
+                <input type="radio" name="Director" id="director_Deepika" value="Deepika" required><label
+                    for="director_Deepika">Deepika</label>
+                <br>
+                <input type="radio" name="Director" id="director_Kaushik" value="Kaushik" required><label
+                    for="director_Kaushik">Kaushik
+                </label>
+                <br>
+                <br>
+                <!-- 5 Editor-->
+                <h2>Best editor:</h2>
+                <br>
+                <input type="radio" name="Editor" id="editor_Chaitanya" value="Chaitanya" required><label
+                    for="editor_Chaitanya">Chaitanya</label>
+                <br>
+                <input type="radio" name="Editor" id="editor_Kaushik" value="Kaushik" required><label
+                    for="editor_Kaushik">Kaushik
+                </label>
+                <br>
+                <br>
+                <!-- 6 Dubbing -->
+                <h2>Best Dubbing:</h2>
+                <br>
+                <input type="radio" name="Dubbing" id="Dubbing_Chaitanya" value="Chaitanya" required><label
+                    for="Dubbing_Chaitanya">Chaitanya</label>
+                <br>
+                <input type="radio" name="Dubbing" id="Dubbing_Deepika" value="Deepika" required><label
+                    for="Dubbing_Deepika">Deepika
+                </label>
+                <br>
+                <br>
+                <!-- 7 screenplay -->
+
+                <h2>Best Screenplay:</h2>
+                <br>
+                <input type="radio" name="Screenplay" id="Screenplay_Dasavatharam" value="Dasavatharam 369 (Prathima,Kiran,Teja)" required><label
+                    for="Screenplay_Dasavatharam">Dasavatharam 369 (Prathima,Kiran,Teja)</label>
+                <br>
+                <input type="radio" name="Screenplay" id="Screenplay_Suparichithudu" value="Suparichithudu (Prathima)"><label
+                    for="Screenplay_Suparichithudu">Suparichithudu (Prathima)</label>
+                <br>
+                <input type="radio" name="Screenplay" id="Screenplay_Gangleader" value="Gang leader (Teja)"><label
+                    for="Screenplay_Gangleader">Gang leader
+                    (Teja)</label>
+                <br>
+                <br>
+                <!-- 8 memer -->
+                <h2>Best Memer:</h2>
+                <br>
+                <input type="radio" name="Memer" id="Memer_Teja" value="Teja for others"><label for="Memer_Teja">Gang
+                    leader, Kiran babu sarvarupasya, bungamoothi, Suparichithudu,
+                    Dasavatharam 369(Teja)</label>
+                <br>
+                <input type="radio" name="Memer" id="Memer_Chaitanya" value="Chaitanya for amat" required><label
+                    for="Memer_Chaitanya">Anthakamundhu ah tarvata (Chaitanya)</label>
+                <br>
+                <input type="radio" name="Memer" id="Memer_Kaushik" value="Kaushik for Suparichithudu"><label
+                    for="Memer_Kaushik">Suparichithudu (Kaushik)</label>
+                <br>
+                <br>
+
+                <!-- 9 graphics -->
+                <h2>Best Graphics:</h2>
+                <br>
+                <input type="radio" name="Graphics" id="Graphics_Chaitanya" value="Dasavatharam 369(Chaitanya)"><label
+                    for="Graphics_Chaitanya">Dasavatharam 369(Chaitanya)</label>
+                <br>
+                <input type="radio" name="Graphics" id="Graphics_Kaushik" value="Suparichithudu (Kaushik)" required><label
+                    for="Graphics_Kaushik">Suparichithudu (Kaushik)</label>
+                <br>
+                <br>
+                <!-- 10 trailer -->
+                <h2>Best trailer:</h2>
+                <br>
+                <input type="radio" name="Trailer" id="trailer_Dasavatharam 369" value="Dasavatharam 369"><label
+                    for="trailer_Dasavatharam 369">Dasavatharam 369</label>
+                <br>
+                <input type="radio" name="Trailer" id="trailer_Gang leader" value="Gang leader" required><label
+                    for="trailer_Gang leader">Gang leader</label>
+                <br>
+                <br>
+                <!-- 11 pre-trailer -->
+                <h2>Best pre-trailer:</h2>
+                <br>
+                <input type="radio" name="Pre_Trailer" id="pre-trailer Anthakamundhu ah tarvata"
+                    value="Anthakamundhu ah tarvata"><label for="pre-trailer Anthakamundhu ah tarvata">Anthakamundhu ah
+                    tarvata</label>
+                <br>
+                <input type="radio" name="Pre_Trailer" id="pre-trailer Dasavatharam 369" value="Dasavatharam 369"
+                    required><label for="pre-trailer Dasavatharam 369">Dasavatharam 369</label>
+                <br>
+                <br>
+                <!-- 12 child -->
+                <h2>Best child artist:</h2>
+                <br>
+                <input type="radio" name="Child_Artist" id="child_Teja" value="Teja for gangleader"><label
+                    for="child_Teja">Teja(Gang leader)</label>
+                <br>
+                <input type="radio" name="Child_Artist" id="child_Kiran" value="Kiran for supari" required><label
+                    for="child_Kiran">Kiran(Suparichithudu)</label>
+                <br>
+                <br>
+                <!-- 13 pair -->
+                <h2>Best screen pair:</h2>
+                <br>
+                <input type="radio" name="Screen_Pair" id="Chaitanya, Teja" value="Chaitanya, Teja"><label
+                    for="Chaitanya, Teja">Chaitanya,Teja(Dasavatharam 369)</label>
+                <br>
+                <input type="radio" name="Screen_Pair" id="Chaitanya, Kaushik " value="Chaitanya, Kaushik "
+                    required><label for="Chaitanya, Kaushik ">Chaitanya, Kaushik (Gang leader)</label>
+                <br>
+                <input type="radio" name="Screen_Pair" id="Teja, Kaushik" value="Teja, Kaushik" required><label
+                    for="Teja, Kaushik">Teja, Kaushik (Suparichithudu)</label>
+                <br>
+                <br>
+                <!-- 14 bgm -->
+                <h2>Best background music:</h2>
+                <br>
+                <input type="radio" name="BGM" id="bgm_Suparichithudu"
+                    value="Oke oka lokam nuvvu, Remo(Suparichithudu)"><label for="bgm_Suparichithudu">Oke oka lokam
+                    nuvvu, Remo(Suparichithudu)</label>
+                <br>
+                <input type="radio" name="BGM" id="bgm_Gang leader"
+                    value="Dhak Dhak Dhak, unnattu undi gunde(Gang leader)" required><label
+                    for="bgm_Gang leader">Dhak Dhak Dhak, unnattu undi gunde(Gang leader)</label>
+                <br>
+                <input type="radio" name="BGM" id="bgm_Dasavatharam" value="Nee jathaleka (Dasavatharam 369)"
+                    required><label for="bgm_Dasavatharam">Nee jathaleka (Dasavatharam 369)</label>
+                <br>
+                <br>
+                <!-- 15 camera -->
+                <h2>Best camera:</h2>
+                <br>
+                <input type="radio" name="Camera" id="camera_Kiran" value="All movies (Kiran)"><label
+                    for="camera_Kiran">All movies (Kiran)</label>
+                <br>
+                <input type="radio" name="Camera" id="camera_Kaushik" value="Anthakamundhu ah tarvata (Kaushik)"
+                    required><label for="camera_Kaushik">Anthakamundhu ah tarvata (Kaushik)</label>
+                <br>
+                <input type="radio" name="Camera" id="camera_Prakash" value="Suparichithudu (Prakash garu)"
+                    required><label for="camera_Prakash">Suparichithudu (Prakash garu)</label>
+                <br>
+                <input type="radio" name="Camera" id="camera_Teja" value="Kiran babu sarvarupasya (Teja)"
+                    required><label for="camera_Teja">Kiran babu sarvarupasya (Teja)</label>
+                <br>
+                <br>
+                <!-- 16 makeup -->
+                <h2>Best make-up:</h2>
+                <br>
+                <input type="radio" name="Make_Up" id="makeup_Deepika"
+                    value="Deepika make-up Chaitanya ( anthakamundhu ah tarvata)"><label for="makeup_Deepika">Deepika
+                    make-up Chaitanya ( anthakamundhu ah tarvata)</label>
+                <br>
+                <input type="radio" name="Make_Up" id="makeup_chaitu_kaushik"
+                    value="Chaitanya and Kaushik make-up Deepika( Anthakamundhu ah tarvata)" required><label
+                    for="makeup_chaitu_kaushik">Chaitanya and Kaushik make-up Deepika( Anthakamundhu ah tarvata)</label>
+                <br>
+                <input type="radio" name="Make_Up" id="makeup_Prathima"
+                    value="Prathima make-up Prakash garu ( Suparichithudu and Dasavatharam 369)" required><label
+                    for="makeup_Prathima">Prathima make-up Prakash garu ( Suparichithudu and Dasavatharam 369)</label>
+                <br>
+                <br>
+                <!-- 17 best char -->
+                <h2>Best character:</h2>
+                <br>
+                <input type="radio" name="Movie_Character" id="character_Prathima"
+                    value="Deepika make-up Chaitanya ( anthakamundhu ah tarvata)"><label
+                    for="character_Prathima">Prathima as scientist ( Dasavatharam 369)</label>
+                <br>
+                <input type="radio" name="Movie_Character" id="character_Chaitanya"
+                    value="Chaitanya as jejamma (Bungamoothi)" required><label for="character_Chaitanya">Chaitanya as
+                    jejamma (Bungamoothi)</label>
+                <br>
+                <input type="radio" name="Movie_Character" id="character_Deepika"
+                    value="Deepika as aparichitudu ( Suparichithudu)" required><label for="character_Deepika">Deepika as
+                    aparichitudu ( Suparichithudu)</label>
+                <br>
+                <br>
+                <!-- 18 best Special appearance -->
+                <h2>Best special Appearance:</h2>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Kumari"
+                    value="Kumari Aama as ammumma ( Gang leader)"><label for="appearance_Kumari">Kumari Aama as ammumma
+                    ( Gang leader)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Gopi"
+                    value="Gopi mavayya ( Dasavatharam 369)" required><label for="appearance_Gopi">Gopi mavayya (
+                    Dasavatharam 369)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Raju"
+                    value="Raju mavayya as tatagaru( Gang leader)" required><label for="appearance_Raju">Raju mavayya as
+                    tatagaru( Gang leader)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Padma"
+                    value="Padma atha( Gang leader)"><label for="appearance_Padma">Padma atha( Gang leader)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Lakshmi"
+                    value="Laxmi pinni ( Bungamoothi, Dasavatharam 369)" required><label
+                    for="appearance_Lakshmi">Lakshmi pinni ( Bungamoothi, Dasavatharam 369)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Sujatha"
+                    value="Sujatha atha( Bunga moothi, gang leader)" required><label for="appearance_Sujatha">Sujatha
+                    atha( Bunga moothi, gang leader)</label>
+                <br>
+                <input type="radio" name="Special_appearance" id="appearance_Prakash"
+                    value="Prakash garu as lazy psychiatrist ( Suparichithudu)" required><label
+                    for="appearance_Prakash">Prakash garu as lazy psychiatrist ( Suparichithudu)</label>
+                <br>
+                <br>
+                <button class="btn btn-lg btn-primary" name="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
